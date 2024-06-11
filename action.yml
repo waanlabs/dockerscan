@@ -1,5 +1,5 @@
 name: 'Docker Build Check'
-description: 'Checks if a Docker build completes correctly'
+description: 'Checks if a Docker build completes successfully'
 inputs:
   path:
     description: 'Path to the Dockerfile'
