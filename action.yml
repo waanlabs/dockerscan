@@ -1,15 +1,25 @@
 name: 'Docker Build Check'
-description: 'Checks if a Docker build completes successfully'
+description: 'Checks if a Docker build completes correctly'
+author: 'Waanlabs'
+
 inputs:
   path:
     description: 'Path to the Dockerfile'
     required: true
     default: '.'
+  build_args:
+    description: 'Additional arguments to pass to the Docker build command'
+    required: false
+    default: ''
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.path }}
+    - ${{ inputs.build_args }}
+    
 branding:
   icon: 'check-circle'
   color: 'blue'
+  
