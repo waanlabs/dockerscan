@@ -17,7 +17,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.path }}
+    - ${{ inputs.dockerfile_path }}
     - ${{ inputs.dockerfile_name }}
     - ${{ inputs.build_args }}
 branding:
