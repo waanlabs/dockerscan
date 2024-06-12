@@ -1,4 +1,4 @@
-name: 'Docker Build Check'
+name: 'Docker Scan'
 description: 'Checks if a Docker build completes correctly'
 inputs:
   path:
