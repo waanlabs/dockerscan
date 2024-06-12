@@ -1,5 +1,4 @@
 #!/bin/bash
-
 set -e
 
 # Get the input path, Dockerfile name, and build arguments
