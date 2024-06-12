@@ -8,7 +8,7 @@ inputs:
   dockerfile_name:
     description: 'Name of the Dockerfile'
     required: true
-    default: ''
+    default: 'Dockerfile'
   build_args:
     description: 'Additional arguments to pass to the Docker build command'
     required: false
