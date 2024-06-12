@@ -1,4 +1,4 @@
-# Dockcheck
+# Dockercheck
 
 Check your Dockerfile build via actions.
 
