@@ -7,8 +7,8 @@ inputs:
     default: '.'
   dockerfile_name:
     description: 'Name of the Dockerfile'
-    required: false
-    default: 'Dockerfile'
+    required: true
+    default: ''
   build_args:
     description: 'Additional arguments to pass to the Docker build command'
     required: false
@@ -18,7 +18,7 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.path }}
-    - ${{ inputs.dockerfile }}
+    - ${{ inputs.dockerfile_name }}
     - ${{ inputs.build_args }}
 branding:
   icon: 'check-circle'
