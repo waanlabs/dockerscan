@@ -15,4 +15,3 @@ RUN chmod +x /entrypoint.sh
 
 # Set the entrypoint script
 ENTRYPOINT ["/entrypoint.sh"]
-

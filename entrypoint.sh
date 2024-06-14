@@ -2,8 +2,8 @@
 set -e
 
 # Get the input path, Dockerfile name, and build arguments
-DOCKERFILE_PATH="$1"
-DOCKERFILE_NAME="$2"
+DOCKERFILE_NAME="$1"
+DOCKERFILE_PATH="$2"
 BUILD_ARGS="$3"
 
 # Run Docker build
