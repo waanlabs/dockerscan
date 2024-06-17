@@ -19,7 +19,7 @@ fi
 # Run security scan with Trivy
 echo "Starting security scan with Trivy"
 
-if trivy image my-image:latest; then
+if trivy image myscan:latest; then
     echo "Security scan completed successfully"
 else
     echo "Security scan failed" >&2
