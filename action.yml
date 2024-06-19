@@ -14,7 +14,7 @@ inputs:
   build_args:
     description: 'Additional arguments to pass to the Docker build command'
     required: false
-    default: ''
+    default: '--no-cache'
 
 runs:
   using: 'docker'
