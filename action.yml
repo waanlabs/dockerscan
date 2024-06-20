@@ -1,28 +1,28 @@
-name: 'Docker Scan'
-description: 'Check build success and scan docker image for vulnerabilities'
+name: "Docker Scan"
+description: "Check build success and scan docker image for vulnerabilities"
 inputs:
   dockerfile_name:
-    description: 'Dockerfile name'
+    description: "Dockerfile name"
     required: true
-    default: 'Dockerfile'
+    default: "Dockerfile"
 
   dockerfile_path:
-    description: 'Dockerfile path'
+    description: "Dockerfile path"
     required: true
-    default: '.'
+    default: "."
 
   build_args:
-    description: 'Additional arguments to pass to the Docker build command'
+    description: "Additional arguments to pass to the Docker build command"
     required: false
-    default: '--no-cache'
+    default: "--no-cache"
 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
   args:
     - ${{ inputs.dockerfile_name }}
     - ${{ inputs.dockerfile_path }}
     - ${{ inputs.build_args }}
 branding:
-  icon: 'check-circle'
-  color: 'blue'
+  icon: "check-circle"
+  color: "blue"
