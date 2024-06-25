@@ -1,6 +1,16 @@
+# Use docker as the base image.
 FROM docker:latest
 
-# Install Docker CLI and other necessary tools
+# Dockblock.
+LABEL author="waanlabs"
+LABEL email="support@waanlabs.com"
+LABEL description="Ubuntu Dev Container"
+LABEL website="https://waanlabs.com"
+LABEL origin="https://github.com/waanlabs/dockerscan"
+LABEL version="0.9.0"
+LABEL license="MIT"
+
+# Install required packages.
 RUN apk add --no-cache \
     bash \
     git \
